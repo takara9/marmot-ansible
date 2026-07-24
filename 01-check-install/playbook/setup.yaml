@@ -1,6 +1,6 @@
 - name: Setup the guest OS
   gather_facts: yes
-  hosts: local
+  hosts: localhost
   become: yes
   tasks:
   - name: パッケージのインストール
