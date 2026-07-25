@@ -1,0 +1,7 @@
+- name: ログとメトリックス監視のセットアップ
+  gather_facts: yes
+  hosts: localhost
+  become: yes
+  roles:
+    - role: node_exporter
+    - role: alloy
